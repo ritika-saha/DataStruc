@@ -1,5 +1,6 @@
 public class LinkedList<T> {
     Node<T> head;
+    Node<T> tail;
     public LinkedList() {
         this.head = null;
     }
@@ -9,6 +10,7 @@ public class LinkedList<T> {
         Node<T> node = new Node<>(data);
         if (head == null) {
             head = node;
+            tail = node;
         } else {
             node.next = head;
             head = node;
