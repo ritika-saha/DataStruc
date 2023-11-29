@@ -20,6 +20,14 @@ public class LinkedListMain {
     list.display();
     list.deleteNode(56);
     list.display();
-     
+
+
+    System.out.println("operations on ordered List");
+    OrderedLinkedList<Integer> orderedList=new OrderedLinkedList<>();
+    orderedList.add(56);
+    orderedList.add(30);
+    orderedList.add(70);
+    orderedList.add(40);
+    orderedList.displayList();
     }
 }
