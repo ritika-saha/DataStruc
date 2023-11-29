@@ -6,5 +6,14 @@ public class StackMain {
         st.push(70);
         System.out.print("Stack :");
         st.display();
+
+        while(st.isEmpty()==false){
+            System.out.println("stack top: "+st.peek());
+            st.pop();
+            System.out.println("After poping");
+            st.display();
+        }
     }
+
+    
 }
