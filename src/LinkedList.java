@@ -6,6 +6,30 @@ public class LinkedList<T> {
         this.tail=null;
     }
 
+    //uc9_deleteNodeLL deleting node
+    public void deleteNode(T data) {
+        if (head == null) {
+            return;
+        }
+
+        if (head.data.equals(data)) {
+            this.deleteFirst();
+            return;
+        }
+
+        if (tail.data.equals(data)) {
+            this.deleteLast();
+            return;
+        }
+
+        Node<T> temp = head;
+        while (temp.next != null && !temp.next.data.equals(data)) {
+            temp = temp.next;
+        }
+
+        temp.next = temp.next.next;
+    }
+
     //uc8_addNodeafterLL adding node after a particular node 
     public void addAfterNode(T queryNode, T newNode) {
         int index = this.searchNode(queryNode);

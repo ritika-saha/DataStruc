@@ -17,7 +17,8 @@ public class LinkedListMain {
      System.out.println(searchResult > -1 ? "Node found at index: " + searchResult : "Node not found");
     list.addAfterNode(56, 40);
     list.display();
-
+    list.deleteNode(56);
+    list.display();
      
     }
 }
