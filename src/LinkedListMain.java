@@ -6,5 +6,7 @@ public class LinkedListMain {
      list.display();
      list.insertAtPos(1, 30);
      list.display();
+     list.deleteFirst();
+     list.display();
     }
 }

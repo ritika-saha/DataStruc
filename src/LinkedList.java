@@ -6,6 +6,17 @@ public class LinkedList<T> {
         this.tail=null;
     }
 
+    //uc5_deleteFirstLL deleting element front front of linked list
+    public void deleteFirst() {
+        if (head == null) {
+            return;
+        }
+
+        Node<T> tempNode = head.next;
+        head.next = null;
+        head = tempNode;
+    }
+
     //uc4_addBetweenLL adding node between
     public int size() {
         Node<T> node = head;
