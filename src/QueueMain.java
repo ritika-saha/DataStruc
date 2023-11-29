@@ -6,6 +6,12 @@ public class QueueMain {
         q.add(70);
         System.out.print("Queue is :");
         q.display();
+        q.dequeue();
+        System.out.print("after dequeue  :");
+        q.display();
+        q.dequeue();
+        System.out.print("after dequeue  :");
+        q.display();
         
     }
 }

@@ -7,4 +7,9 @@ public class Queue<T> extends LinkedList<T> {
     public void enqueue(T data) {
         super.add(data); 
     }
+
+    //uc4_dequeue
+    public void dequeue() {
+        super.deleteFirst(); // FIFO
+    }
 }
