@@ -1,5 +1,6 @@
 public class LinkedListMain {
     public static void main(String[] args) throws Exception {
+        System.out.println("operations on unordered Lined List");
      LinkedList<Integer> list=new LinkedList<>();
      list.add(56);
      list.add(70);
