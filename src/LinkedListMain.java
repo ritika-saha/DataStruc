@@ -10,5 +10,13 @@ public class LinkedListMain {
      list.display();
      list.deleteLast();
      list.display();
+     list.add(56);
+     list.add(70);
+     list.display();
+     int searchResult=list.searchNode(70);
+     System.out.println(searchResult > -1 ? "Node found at index: " + searchResult : "Node not found");
+
+
+     
     }
 }

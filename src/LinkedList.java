@@ -6,6 +6,24 @@ public class LinkedList<T> {
         this.tail=null;
     }
 
+    //uc7_searchNodeLL searching particular node by value
+    public int searchNode(T data) {
+        if (head == null) {
+            return -1;
+        }
+
+        Node<T> temp = head;
+        int index = 0;
+        while (temp != null) {
+            if (temp.data.equals(data)) {
+                return index;
+            }
+            index++;
+            temp = temp.next;
+        }
+        return -1;
+    }
+
     //uc6_deleteLastLL deleting last element
     public void deleteLast() {
         if (head == null) {
