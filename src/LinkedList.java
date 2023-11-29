@@ -6,6 +6,16 @@ public class LinkedList<T> {
         this.tail=null;
     }
 
+    //uc8_addNodeafterLL adding node after a particular node 
+    public void addAfterNode(T queryNode, T newNode) {
+        int index = this.searchNode(queryNode);
+        if (index == -1) {
+            System.out.println("Source node not found.");
+            return;
+        }
+        this.insertAtPos(index + 1, newNode);
+    }
+
     //uc7_searchNodeLL searching particular node by value
     public int searchNode(T data) {
         if (head == null) {

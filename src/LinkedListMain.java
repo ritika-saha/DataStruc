@@ -15,7 +15,8 @@ public class LinkedListMain {
      list.display();
      int searchResult=list.searchNode(70);
      System.out.println(searchResult > -1 ? "Node found at index: " + searchResult : "Node not found");
-
+    list.addAfterNode(56, 40);
+    list.display();
 
      
     }
