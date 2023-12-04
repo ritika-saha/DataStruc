@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class StringPermutations {
+public class q1_StringPermutations {
 
     // Iterative method to generate all permutations of a string
     public static String[] generatePermutationsIterative(String input) {
